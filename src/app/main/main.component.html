@@ -1,0 +1,387 @@
+<!-- <p><a class="u">U</a>pdates2<a class="k">k</a>22</p> -->
+<div class="mainSection">
+    <nav>
+        <div class="Logo">
+            <img src="../../assets/Final Updates Logo@4x.png" alt="">
+        </div>
+        <div class="navItems">
+            <div class="navbar">
+                <a href="#">Home</a>
+                <a href="#eventSection">Events</a>
+                <a href="#timeTable">Schedule</a>
+                <a href="#coOrdinators">Co-ordinators</a>
+                <a href="#developersSection">Developers</a>
+            </div>
+        </div>
+        <div class="toggleDisplay">
+            <div class="dropdown">
+                <button class="btn btn-secondary"
+                    style="background-color: #161616; border-color: #161616; box-shadow: none;" type="button"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right"
+                    style="background-color: #161616; border-color: #161616; min-height: 300px;"
+                    aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#eventSection">Events</a>
+                    <a class="dropdown-item" href="#timeTable">Schedule</a>
+                    <a class="dropdown-item" href="#coOrdinators">Co-ordinators</a>
+                    <a class="dropdown-item" href="#developersSection">Developers</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="backImg">
+            <img src="../../assets/mainPoster.jpg" alt="">
+        </div>
+    </div>
+
+    <section class="slider-container titleMrg">
+        <div class="mainTitle">
+            <h1 class="title">Sponsor</h1>
+        </div>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="../../assets/Sponsers/1.PNG" height="120" width="230" alt="" />
+                </div>
+                <div class="slide" style="margin-left: -100px;">
+                    <img src="../../assets/Sponsers/2.jpg" height="110" width="110" alt="" />
+                </div>
+                <div class="slide" style="margin-left: -90px;">
+                    <img src="../../assets/Sponsers/3.JPG" height="110" width="120" alt="" />
+                </div>
+                <div class="slide" style="margin-left: -60px;">
+                    <img src="../../assets/Sponsers/4.jpg" height="110" width="120" alt="" />
+                </div>
+                <div class="slide" style="margin-left: -30px;">
+                    <img src="../../assets/Sponsers/5.JPG" height="110" width="200" alt="" />
+                </div>
+                <div class="slide" style="margin-left:50px;">
+                    <img src="../../assets/Sponsers/6.JPG" height="100" width="250" alt="" />
+                </div>
+                <div class="slide" style="margin-left:70px;">
+                    <img src="../../assets/Sponsers/7.JPG" height="100" width="250" alt="" />
+                </div>
+                <div class="slide" style="margin-left:70px;">
+                    <img src="../../assets/Sponsers/8.JPG" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="../../assets/Sponsers/1.PNG" height="120" width="230" alt="" />
+                </div>
+                <div class="slide" style="margin-left: -100px;">
+                    <img src="../../assets/Sponsers/2.jpg" height="110" width="110" alt="" />
+                </div>
+                <div class="slide" style="margin-left: -90px;">
+                    <img src="../../assets/Sponsers/3.JPG" height="110" width="120" alt="" />
+                </div>
+                <div class="slide" style="margin-left: -60px;">
+                    <img src="../../assets/Sponsers/4.jpg" height="110" width="120" alt="" />
+                </div>
+                <div class="slide" style="margin-left: -30px;">
+                    <img src="../../assets/Sponsers/5.JPG" height="110" width="200" alt="" />
+                </div>
+                <div class="slide" style="margin-left:50px;">
+                    <img src="../../assets/Sponsers/6.JPG" height="100" width="250" alt="" />
+                </div>
+                <div class="slide" style="margin-left:70px;">
+                    <img src="../../assets/Sponsers/7.JPG" height="100" width="250" alt="" />
+                </div>
+                <div class="slide" style="margin-left:70px;">
+                    <img src="../../assets/Sponsers/8.JPG" height="100" width="250" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="marque" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+        <div class="insideMarque" style="width: 80%;"> 
+        <marquee behavior="" style="font-size: 30px; color: red; font-weight: 700;" direction="left">“Registration for each of these events is free, and each winner will be given cash prizes”</marquee>
+    </div>
+    </div>
+
+    <div class="event-container titleMrg" id="eventSection">
+        <div class="mainTitle">
+            <h1 class="title">Events</h1>
+        </div>
+        <div class="event-card-container">
+
+            <div class="event-card" id="eventCard">
+                <div class="event-img">
+                    <img src="../../assets/Events/CodeTheOne_FinalPoster.png" onclick="CodeClick()" id="codeOne"  alt="">
+                </div>
+                <div class="rules_container editZ-index-0" id="codeTheOne-display">
+                    <div class="rules_div" id="rulesContainer">
+                        <i class="fa fa-times-circle" onclick="CloseCodeClick()"></i>
+                        <img src="../../assets/Rules/Rules_CodeTheOne.png" alt="rule" />
+                        <button class='register-btn' (click)="goToLink('https://forms.gle/p234XpsDjQ2thiaC8')">Register</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="../../assets/Events/Cypher Mania final.png" onclick="cypherMania()" alt="">
+                </div>
+                <div class="rules_container editZ-index-0" id="cypherMania-display">
+                    <div class="rules_div" id="rulesContainer">
+                        <i class="fa fa-times-circle" onclick="ClosecypherMania()"></i>
+                        <img src="../../assets/Rules/Rules_CypherMania.png" alt="rule" />
+                        <button class='register-btn' (click)="goToLink('https://forms.gle/UZDfRuAdf5cYzhYJ6')">Register</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="../../assets/Events/Cineverse-min (1).png" onclick="Cineverse()" alt="">
+                </div>
+                <div class="rules_container editZ-index-0" id="Cineverse-display">
+                    <div class="rules_div" id="rulesContainer">
+                        <i class="fa fa-times-circle" onclick="CloseCineverse()"></i>
+                        <img src="../../assets/Rules/Rules_Cineverse.png" alt="rule" />
+                        <button class='register-btn' (click)="goToLink('https://forms.gle/myCTmRLMXfbB7EiaA')">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="../../assets/Events/Final BID WARS.png" onclick="BidWars()" alt="">
+                </div>
+                <div class="rules_container editZ-index-0" id="BidWars-display">
+                    <div class="rules_div" id="rulesContainer">
+                        <i class="fa fa-times-circle" onclick="CloseBidWars()"></i>
+                        <img src="../../assets/Rules/Rules_BidWars.png" alt="rule" />
+                        <button class='register-btn' (click)="goToLink('https://forms.gle/SBAgtdUWzeWhrJFy6')">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="../../assets/Events/Final I-SQUARE-1.png" onclick="iSquare()" alt="">
+                </div>
+                <div class="rules_container editZ-index-0" id="iSquare-display">
+                    <div class="rules_div" id="rulesContainer">
+                        <i class="fa fa-times-circle" onclick="CloseiSquare()"></i>
+                        <img src="../../assets/Rules/Rules_ISquare.png" alt="rule" />
+                        <button class='register-btn'(click)="goToLink('https://forms.gle/wjT4NMGXpW2rQmFj6')">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="../../assets/Events/Niyukti final.png" onclick="Niyukti()" alt="">
+                </div>
+                <div class="rules_container editZ-index-0" id="Niyukti-display">
+                    <div class="rules_div" id="rulesContainer">
+                        <i class="fa fa-times-circle" onclick="CloseNiyukti()"></i>
+                        <img src="../../assets/Rules/Rules_Niyukti.png" alt="rule" />
+                        <button class='register-btn' (click)="goToLink('https://forms.gle/NkgHV4xcorXKUctH9')">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="../../assets/Events/Politquely.png" onclick="Politquely()" alt="">
+                </div>
+                <div class="rules_container editZ-index-0" id="Politquely-display">
+                    <div class="rules_div" id="rulesContainer">
+                        <i class="fa fa-times-circle" onclick="ClosePolitquely()"></i>
+                        <img src="../../assets/Rules/Rules_Politiquely.png" alt="rule" />
+                        <button class='register-btn' (click)="goToLink('https://forms.gle/JhkxEfRRTcLgw8AV7')">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="../../assets/Events/solve n code (1).png" onclick="solveNcode()" alt="">
+                </div>
+                <div class="rules_container editZ-index-0" id="solveNcode-display">
+                    <div class="rules_div" id="rulesContainer">
+                        <i class="fa fa-times-circle" onclick="ClosesolveNcode()"></i>
+                        <img src="../../assets/Rules/Rules_SolveNCode.png" alt="rule" />
+                        <button class='register-btn'  (click)="goToLink('https://forms.gle/V9Kb2gvub1coH6NB7')">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="../../assets/Events/uxplore (1).png" onclick="uxplore()" alt="">
+                </div>
+                <div class="rules_container editZ-index-0" id="uxplore-display">
+                    <div class="rules_div" id="rulesContainer">
+                        <i class="fa fa-times-circle" onclick="Closeuxplore()"></i>
+                        <img src="../../assets/Rules/Rules_Uxplore.png" alt="rule" />
+                        <button class='register-btn' (click)="goToLink('https://forms.gle/hJijF3Pnk3sELtLt7')">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="../../assets/Events/Zodiac (1)-1.png" onclick="Zodiac()" alt="">
+                </div>
+                <div class="rules_container editZ-index-0" id="Zodiac-display">
+                    <div class="rules_div" id="rulesContainer">
+                        <i class="fa fa-times-circle" onclick="CloseZodiac()"></i>
+                        <img src="../../assets/Rules/Rules_Zodiac.png" alt="rule" />
+                        <button class='register-btn' (click)="goToLink('https://forms.gle/55TkLVVh6YapS8PS6')">Register</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="timeTable" class="titleMrg">
+        <div class="schedule">
+            <div class="mainTitle">
+                <h1 class="title">Event Schedule</h1>
+            </div>
+            <div class="timeTable">
+                <img src="../../assets/eventSchedule.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="coOrdinators" class="carouselContainer titleMrg"
+        style="display: flex; justify-content: center; align-items: center;">
+        <div class="mainTitle">
+            <h1 class="title mainTit">MAIN COORDINATORS</h1>
+        </div>
+        <div class="corouselInside">
+
+            <owl-carousel-o [options]="customOptions">
+
+                <ng-container *ngFor="let slide of mainCoordinators">
+                    <ng-template carouselSlide>
+                        <div class="profile-card">
+                            <div class="profileImg">
+                                <img src="{{ slide.img }}" alt="image1" class="profile-icon" />
+                            </div>
+                            <div class="profile-name">{{ slide.name }}</div>
+                        </div>
+                    </ng-template>
+                </ng-container>
+
+            </owl-carousel-o>
+        </div>
+    </div>
+
+    <div class="developersContainer titleMrg">
+        <div class="mainTitle">
+            <h1 class="title facTitle">FACULTY COORDINATORS</h1>
+        </div>
+        <div class="faculties">
+            <div class="faculty developer">
+                <div class="developerImg">
+                    <img src="../../assets/FacultyCoordinators/vandanaJoshi.jpeg" alt="">
+                </div>
+                <p class="devName">Prof. Vandana joshi</p>
+            </div>
+            <div class="faculty developer">
+                <div class="developerImg">
+                    <img src="../../assets/FacultyCoordinators/nitiyaKomalan.jpeg" alt="">
+                </div>
+                <p class="devName">Ms. Nitya komalan</p>
+            </div>
+            <div class="faculty developer">
+                <div class="developerImg">
+                    <img src="../../assets/FacultyCoordinators/yuktiDesai.jpeg" alt="">
+                </div>
+                <p class="devName">Ms. Yuti Desai</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="developersContainer titleMrg" id="developersSection">
+        <div class="mainTitle">
+            <h1 class="title">Web Developers</h1>
+        </div>
+        <div class="developers">
+            <div class="developer" (click)="goToLink('https://github.com/Maldicion')">
+                <div class="developerImg">
+                    <img src="../../assets/Screenshot 2022-09-21 at 11.25.41 PM.png" alt="">
+                </div>
+                <p class="devName">Davda Pritam</p>
+            </div>
+            <div class="developer" (click)="goToLink('https://github.com/JASH-PATEL-6566')">
+                <div class="developerImg">
+                    <img src="../../assets/Screenshot 2022-09-24 at 9.25.59 PM.png" alt="">
+                </div>
+                <p class="devName">Jash Patel</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="spContainer titleMrg">
+        <div class="mainTitle">
+            <h1 class="title">Special Thanks To</h1>
+        </div>
+        <div class="tab-wrap">
+
+            <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+            <label for="tab1">Marketing Team</label>
+
+            <input type="radio" id="tab2" name="tabGroup1" class="tab">
+            <label for="tab2">Decoration Team</label>
+
+            <input type="radio" id="tab3" name="tabGroup1" class="tab">
+            <label for="tab3">Design Team</label>
+
+            <div class="tab__content">
+                <h5>Akshay Golakiya</h5>
+                <h5>Halima Rajwani</h5>
+                <h5>Smit Pansuriya</h5>
+                <h5>Nandish Saraiya</h5>
+                <h5>Vishwa Shah</h5>
+                <h5>Tanisha Javeri</h5>
+                <h5>Krish Rana</h5>
+                <h5>Hetvi Vaghasiya</h5>
+                <h5>Birva Shah</h5>
+                <h5>Milan Golakiya</h5>
+                <h5>Aarohi Desai</h5>
+                <h5>Dev Patel</h5>
+            </div>
+
+            <div class="tab__content">
+                <h5>Helly Diyora</h5>
+                <h5>Hetvi Jariwala</h5>
+                <h5>Devanshi Mistry</h5>
+                <h5>Priyal Mehta</h5>
+                <h5>Drashti Bhingaradiya</h5>
+                <h5>Aastha Savaliya</h5>
+                <h5>Krisha Bhingaradiya</h5>
+                <h5>Priyanshi Kalasariya</h5>
+                <h5>Ricky Vashi</h5>
+                <h5>Drashti Godhani</h5>
+                <h5>Dhruvi Dobariya</h5>
+                <h5>Pooja Pandit</h5>
+                <h5>Naiya Patel</h5>
+            </div>
+
+            <div class="tab__content">
+                <h5>Takshil Kunadia</h5>
+                <h5>Kushal Jasani</h5>
+                <h5>Shruti Savani</h5>
+                <h5>Drashti Gor</h5>
+                <h5>Helly Patel</h5>
+                <h5>Aamena Mulla</h5>
+                <h5>Jensi Akbari</h5>
+                <h5>Nandini Patel</h5>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footerContent">All Rights Reserved By Scet - CO DEPARTMENT</div>
+    </footer>
+
+</div>
