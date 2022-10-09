@@ -1,0 +1,1223 @@
+.mainSection {
+    background: url('../../assets/wallpaper5.jpg') no-repeat center center fixed #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.titleMrg {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.mainTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+    font-size: 33px;
+    padding: 10px;
+    /* color: #de1fdb; */
+    color: #32aee1;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 80%;
+    background: #229fd2;
+    transition: width .3s ease;
+}
+
+.title:hover::after {
+    width: 0%;
+}
+
+
+/* NAVBAR CSS */
+.dropdown-menu-right {
+    transition: 0.5s;
+    width: 300px;
+}
+
+.toggleDisplay {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    display: none;
+}
+
+.menuContainer {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.brand-logo {
+    margin: auto !important;
+    height: 4em;
+}
+
+nav {
+    position: relative;
+    height: 73px !important;
+    display: flex;
+    align-items: center;
+    /* background-color: rgba(6, 12, 34, 0.98); */
+    background-color: #161616;
+}
+
+.Logo {
+    width: 200px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.Logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Logo p {
+    color: white;
+    font-size: 30px;
+    margin: 5px 25px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.navItems {
+    position: absolute;
+    right: 10px;
+    align-items: center;
+}
+
+.navItems>.navbar {
+    display: flex;
+}
+
+.navbar a {
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: #229fd2;
+    transition: width .3s ease;
+}
+
+.navbar a:hover::after {
+    width: 80%;
+}
+
+/* NAVBAR CSS END */
+
+/* MAIN CONTENT CSS */
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backImg {
+    width: 100%;
+    height: 749px;
+    display: flex;
+    justify-content: center;
+}
+
+.backImg img {
+    width: 100%;
+    height: 96%;
+}
+
+.mainPoster {
+    position: absolute;
+}
+
+/* COUROUSEL */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-220px * 12));
+    }
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-container h1 {
+    margin: 0px auto;
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    margin: 25px auto;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+}
+
+.slider-profile {
+    width: 80%;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 29s linear infinite;
+    display: flex;
+    width: fit-content;
+}
+
+.slider-profile {
+    margin: auto;
+}
+
+.slider-profile {
+    margin: auto;
+}
+
+.slider-profile .slide-track {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+}
+
+.slider .slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* COUROUSEL END */
+
+/* EVENT CARD CSS */
+.event {
+    display: flex;
+    justify-content: center;
+}
+
+.event-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event-card-container {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-card {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 28%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.event-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.event-img img {
+    width: 100%;
+}
+.event-img img:hover{
+    transition: 0.3s ease;
+    transform: scale(1.02);
+}
+
+.event-name {
+    opacity: 0;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 300ms
+}
+
+.event-name:hover {
+    opacity: 1;
+    background-color: rgba(100, 100, 100, 0.5);
+    transition: all 300ms
+}
+
+.event-name p {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    margin: 0px 0px;
+}
+
+.overlay {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.514);
+    overflow: hidden;
+    width: 100%;
+    height: 10%;
+    transition: 0.7s ease-out;
+    display: flex;
+    justify-content: flex-start;
+    /* border-radius: 0.8em; */
+}
+
+.event-card:hover {
+    height: 20%;
+    cursor: pointer;
+}
+
+
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4em;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.event-card:hover .text {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    transition: 0.6s ease;
+}
+
+/* EVENT CARD END */
+
+/* PROFILE CSS */
+.profile-card {
+    width: 230px;
+    height: 250px;
+    max-width: 400px;
+    background:rgb(160 200 216 / 74%);
+    /* background: rgb(255, 255, 255); */
+    padding: 20px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7em;
+    box-shadow: 0 0 2px 0 rgb(177, 177, 177);
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 0.9em 20px;
+}
+
+.profileImg {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-card img {
+    height: 100%;
+}
+
+.profile-card:hover {
+    box-shadow: 0 0 15px -5px #2d3436;
+}
+
+.profile-icon {
+    object-fit: cover;
+}
+
+.profile-name {
+    display: flex;
+    align-content: center;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 25px 0 10px 0;
+}
+
+.profile-position {
+    font-size: 14px;
+    color: #777;
+}
+
+.faculty-coordinator {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* SCHEDULE */
+.schedule {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeTable {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.timeTable img {
+    width: 100%;
+}
+
+.developersContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.developers {
+    margin: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faculties {
+    margin: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.developer {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    cursor: pointer;
+    padding: 20px 10px;
+    /* border: 1px solid #e0e0e0; */
+    /* background-color: white; */
+    background-color: rgb(160 200 216 / 74%);
+    border-radius: 10px;
+}
+
+.developer:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+}
+
+.faculty {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    cursor: pointer;
+    padding: 20px 10px;
+    /* border: 1px solid #e0e0e0; */
+    background-color: rgb(160 200 216 / 74%);
+    /* background-color: white; */
+    border-radius: 5px;
+}
+
+.faculty:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+}
+
+.devName {
+    margin: 0px 0px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.developerImg {
+    margin-top: 10px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.developerImg img {
+    width: 100%;
+}
+
+/* tabs */
+.spContainer {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-wrap {
+    width: 80%;
+    transition: 0.3s box-shadow ease;
+    border-radius: 6px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    background-color: rgb(160 200 216 / 74%);
+    /* background-color: #fff; */
+    margin: 40px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* .tab-wrap:hover {
+    box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+} */
+
+.tab {
+    display: none;
+}
+
+.tab:checked:nth-of-type(1)~.tab__content:nth-of-type(1) {
+    opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+.tab:checked:nth-of-type(2)~.tab__content:nth-of-type(2) {
+    opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+.tab:checked:nth-of-type(3)~.tab__content:nth-of-type(3) {
+    opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+.tab:checked:nth-of-type(4)~.tab__content:nth-of-type(4) {
+    opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+.tab:checked:nth-of-type(5)~.tab__content:nth-of-type(5) {
+    opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+.tab:first-of-type:not(:last-of-type)+label {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.tab:not(:first-of-type):not(:last-of-type)+label {
+    border-radius: 0;
+}
+
+.tab:last-of-type:not(:first-of-type)+label {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.tab:checked+label {
+    background-color: #0b1126;
+    color: white;
+    box-shadow: 0 -1px 0 rgb(160 200 216 / 74%) inset;
+    cursor: default;
+}
+
+.tab:checked+label:hover {
+    /* box-shadow: 0 -1px 0 #fff inset; */
+    background-color: #0b1126;
+    color: white;
+}
+
+.tab+label {
+    box-shadow: 0 -1px 0 #eee inset;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    flex-grow: 3;
+    text-align: center;
+    background-color: #f2f2f2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    transition: 0.3s background-color ease, 0.3s box-shadow ease;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.tab+label:hover {
+    background-color: #f9f9f9;
+}
+
+.tab__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    left: 0;
+    transform: translateY(-3px);
+    border-radius: 6px;
+}
+
+.tab__content h5 {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.tab__content h5:hover {
+    transition: .1s ease-in;
+    transform: scale(1.2);
+}
+
+/* boring stuff */
+
+.container {
+    margin: 0 auto;
+    display: block;
+    max-width: 800px;
+}
+
+.container>*:not(.tab-wrap) {
+    padding: 0 80px;
+}
+
+/* tabs closed */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(6, 12, 34, 0.98); */
+    background-color: #161515;
+    height: 50px;
+}
+
+.footerContent {
+    color: white;
+}
+
+/* MAIN CAUROSAL */
+
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.corouselInside {
+    margin-top: 25px;
+    width: 80%;
+}
+
+.carouselContainer>h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* NEW RULES */
+
+.rules_container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+}
+
+.rules_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rules_div i{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.editZ-index-0{
+    z-index: -1;
+}
+
+.zIndex{
+    z-index: 111;
+}
+
+.displayNone{
+    display: none;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.rules_container{
+    margin-top: 25px;
+}
+
+#codeTheOne-display{
+    transition: all 1s ease;
+}
+
+.rules_div img{
+    width: 100%;
+}
+
+.register-btn {
+    width: fit-content;
+    margin: 10px auto;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 0.3em 1.7em;
+    border-radius: 0.7em;
+}
+
+.register-btn:hover {
+    background-color: rgb(255, 56, 56);
+    cursor: pointer;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 750px) {
+    .event-card {
+        width: 40%;
+    }
+    .rules_container {
+        width: 40%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .rules_div i{
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: -25px;
+        right: 0px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .event-card {
+        width: 80%;
+    }
+    .rules_container {
+        width: 70%;
+    }
+
+    .rules_div i{
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: -25px;
+        right: -10px;
+    }
+
+    .title {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .backImg {
+        height: auto;
+        object-fit: cover;
+    }
+
+    .profile-card {
+        width: 250px;
+    }
+
+    .developer {
+        width: 30%;
+    }
+
+    .faculty {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .profile-card {
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    .profile-card {
+        width: 220px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .profile-card {
+        width: 210px;
+        height: 250px;
+        padding: 20px 33px;
+    }
+
+    .profile-name {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .profile-card {
+        width: 250px;
+        height: 250px;
+        margin: .9rem 20px;
+    }
+
+    .corouselInside {
+        width: 62%;
+    }
+}
+
+@media only screen and (max-width: 483px) {
+    .profile-card {
+        width: 240px;
+        height: 250px;
+        margin: .9rem 10px;
+    }
+
+    .corouselInside {
+        width: 63%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .profile-card {
+        width: 240px;
+        height: 250px;
+        margin: .9rem 10px;
+    }
+
+    .corouselInside {
+        width: 70%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .profile-card {
+        width: 200px;
+        height: 210px;
+        margin: .9rem 20px;
+    }
+
+    .corouselInside {
+        width: 80%;
+        overflow: hidden;
+    }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .navItems {
+        right: 5px;
+    }
+
+    .navbar a {
+        margin: 20px 9px;
+    }
+
+    .developer {
+        min-width: 35%;
+    }
+
+    .developerImg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-card {
+        padding: 20px 30px;
+    }
+
+    .profileImg {
+        width: 135px;
+        height: 135px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .toggleDisplay {
+        display: block;
+    }
+
+    .navItems {
+        display: none;
+    }
+
+    .dropdown-menu a {
+        color: white;
+        margin: 10px 5px;
+    }
+
+    .developers {
+        width: 90%;
+    }
+
+    .faculties {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .developer {
+        width: 40%;
+        margin: 0px 15px;
+    }
+
+    .faculty {
+        width: 40%;
+        margin-top: 20px;
+    }
+
+    .dropdown-item {
+        padding: 20px 20px;
+    }
+
+    .dropdown-item::after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 2px;
+        width: 0px;
+        background: darkcyan;
+        transition: width .3s ease;
+    }
+
+    .dropdown-item:hover::after {
+        width: 80%;
+    }
+
+    .timeTable{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .developers {
+        width: 100%;
+    }
+
+    .faculties {
+        width: 100%;
+    }
+
+    .developer {
+        width: 40%;
+        margin: 0px 15px;
+    }
+
+    .faculty {
+        width: 45%;
+        margin-top: 20px;
+    }
+
+    .devName {
+        font-size: 17px;
+    }
+
+    .developerImg {
+        width: 135px;
+        height: 135px;
+    }
+
+    .tab-wrap {
+        width: 90%;
+    }
+
+    .tab-wrap>label {
+        width: 30%;
+        font-size: 13px;
+    }
+
+    .tab__content>h3 {
+        font-size: 18px;
+    }
+
+    .footerContent {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .developers {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .developer {
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .developers {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .faculties {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .developer {
+        width: 60%;
+        min-height: 270px;
+        height: 270px;
+        margin: 0px 15px;
+        padding: 0px 10px;
+        margin: 20px 0px;
+    }
+
+    .faculty {
+        width: 60%;
+        min-height: 270px;
+        height: 270px;
+        margin-top: 20px;
+        padding: 0px 10px;
+    }
+
+    .devName {
+        font-size: 17px;
+    }
+
+    .developerImg {
+        width: 135px;
+        height: 135px;
+    }
+
+    .profileImg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .tab-wrap {
+        width: 90%;
+    }
+
+    .tab-wrap>label {
+        width: 30%;
+        font-size: 11px;
+        padding: 15px 0px;
+    }
+
+    .tab__content>h3 {
+        font-size: 18px;
+    }
+
+    .spContainer {
+        margin-top: 30px;
+    }
+
+    .footerContent {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .profile-card {
+        width: 215px;
+        height: 240px;
+        margin: .9rem 20px;
+    }
+
+    .corouselInside {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .developerImg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .developer {
+        width: 70%;
+        min-height: 240px;
+        height: 240px;
+        margin: 17px 0px;
+    }
+
+    .faculty {
+        width: 70%;
+        min-height: 240px;
+        height: 240px;
+        margin-top: 20px;
+    }
+
+    .facTitle {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+
+    .profile-card {
+        width: 200px;
+        height: 230px;
+        margin: .9rem 10px;
+    }
+
+    .corouselInside {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .developerImg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .developer {
+        width: 70%;
+        min-height: 240px;
+        height: 240px;
+        margin: 17px 0px;
+    }
+
+    .faculty {
+        width: 70%;
+        min-height: 240px;
+        height: 240px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+
+    .facTitle {
+        font-size: 17px;
+    }
+
+    .mainTit {
+        font-size: 17px;
+    }
+}
+
+.owl-item {
+    margin: 10px;
+}
